@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Reservations | Luxe Aura Salon & Spa</title>
+  <meta name="description" content="Book your premium beauty experience. Located at 425 Madison Avenue, New York. Call, WhatsApp, or reserve your session online with our master artists.">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="marble-texture">
+
+  <!-- 1. Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-info">
+      <a href="tel:+15557264100"><i class="fa-solid fa-phone"></i> +1 (555) 726-4100</a>
+      <a href="tel:+15557264100" target="_blank"><i class="fa-brands fa-whatsapp"></i> Call Salon</a>
+      <a href="mailto:hello@luxeaurasalon.com"><i class="fa-solid fa-envelope"></i> hello@luxeaurasalon.com</a>
+    </div>
+    <div>
+      <span>Mon - Fri: 9am - 8pm | Sat - Sun: 9am - 9pm</span>
+    </div>
+  </div>
+
+  <!-- 2. Header -->
+  <header class="main-header">
+    <div class="logo-area">
+      <a href="index.html">
+        <h1>LUXE AURA <span>Salon & Spa</span></h1>
+      </a>
+    </div>
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="experts.html">Experts</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+      <button class="btn btn-primary btn-book" style="padding: 0.65rem 1.5rem; font-size: 0.75rem; margin-left: 1rem;">Book Appointment</button>
+    </nav>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- 3. Mobile Navigation -->
+  <div class="mobile-drawer">
+    <nav class="mobile-drawer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="experts.html">Experts</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button class="btn btn-primary btn-book" style="width: 80%; max-width: 300px;">Book Appointment</button>
+  </div>
+
+  <!-- 4. Subpage Hero -->
+  <section class="subpage-hero">
+    <div class="section-container">
+      <span class="section-subtitle">Reservations & Location</span>
+      <h1>CONTACT & BOOKING</h1>
+      <p>Reserve your premium self-care slot or speak to our guest relations team on Madison Avenue.</p>
+    </div>
+  </section>
+
+  <!-- 5. Split Contact Layout -->
+  <section class="section-padding">
+    <div class="section-container">
+      <div class="contact-layout">
+        
+        <!-- Left Side: Coordinates & Hours -->
+        <div class="contact-details scroll-reveal">
+          <div class="contact-detail-card">
+            <h3>SALON COORDINATES</h3>
+            <p style="margin-bottom: 1.5rem; line-height: 1.8;">
+              <strong>Luxe Aura Salon & Spa</strong><br>
+              425 Madison Avenue<br>
+              New York, NY 10017
+            </p>
+            
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <a href="tel:+15557264100" style="display: flex; align-items: center; gap: 0.75rem; font-weight: 500;"><i class="fa-solid fa-phone" style="color: var(--accent-primary);"></i> Phone: +1 (555) 726-4100</a>
+              <a href="tel:+15557264100" target="_blank" style="display: flex; align-items: center; gap: 0.75rem; font-weight: 500;"><i class="fa-brands fa-whatsapp" style="color: var(--accent-primary);"></i> WhatsApp: +1 (555) 726-4101</a>
+              <a href="mailto:hello@luxeaurasalon.com" style="display: flex; align-items: center; gap: 0.75rem; font-weight: 500;"><i class="fa-solid fa-envelope" style="color: var(--accent-primary);"></i> Email: hello@luxeaurasalon.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail-card">
+            <h3>BUSINESS HOURS</h3>
+            <div style="display: flex; flex-direction: column;">
+              <div class="contact-detail-row">
+                <span>Monday - Friday</span>
+                <span>9:00 AM - 8:00 PM</span>
+              </div>
+              <div class="contact-detail-row">
+                <span>Saturday</span>
+                <span>9:00 AM - 9:00 PM</span>
+              </div>
+              <div class="contact-detail-row">
+                <span>Sunday</span>
+                <span>10:00 AM - 6:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Scheduler Form -->
+        <div class="contact-form-wrapper scroll-reveal-slow">
+          <h3 style="font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 0.5rem;">ONLINE APPOINTMENT RESERVATIONS</h3>
+          <p style="font-family: var(--font-accent); font-style: italic; color: var(--accent-primary); font-size: 1.15rem; margin-bottom: 2rem;">Bespoke Care Awaits</p>
+          
+          <form id="contact-appointment-form" onsubmit="event.preventDefault(); this.style.display='none'; const successBox=document.getElementById('contact-success-msg'); successBox.style.display='block';">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Guest Name *</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="Elena Vance" required>
+            </div>
+            
+            <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+              <div>
+                <label class="form-label" for="contact-phone">Phone Number *</label>
+                <input type="tel" id="contact-phone" class="form-input" placeholder="+1 (555) 726-4100" required>
+              </div>
+              <div>
+                <label class="form-label" for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="guest@example.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-service">Desired Treatment</label>
+              <select id="contact-service" class="form-input" style="appearance: auto; background-color: var(--surface);">
+                <option value="Hair Styling & Cut">Hair Styling & Creative Cut</option>
+                <option value="Signature French Balayage">Signature French Balayage</option>
+                <option value="Organic Keratin Treatment">Organic Keratin Treatment</option>
+                <option value="Advanced Salon Facial">Advanced Salon Facial</option>
+                <option value="Bridal Makeup Consultation">Bridal Makeup Consultation</option>
+                <option value="Spa & Wellness Session">Spa & Wellness Session</option>
+                <option value="Nail Art & Manicure">Premium Nail Art & Manicure</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-date">Preferred Date & Time *</label>
+              <input type="datetime-local" id="contact-date" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Special Notes / Requests</label>
+              <textarea id="contact-message" class="form-input" rows="4" placeholder="Please specify if you prefer a specific stylist or therapist..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Submit Reservation Request</button>
+          </form>
+
+          <!-- Custom Success Message Box -->
+          <div id="contact-success-msg" style="display: none; text-align: center; padding: 3rem 1.5rem;">
+            <div class="badge-icon" style="margin: 0 auto 1.5rem; width: 60px; height: 60px; font-size: 1.8rem; background: var(--soft-highlight); color: var(--luxury-gold);">✓</div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 1rem;">RESERVATION REQUEST SUBMITTED</h3>
+            <p style="font-family: var(--font-accent); font-style: italic; font-size: 1.2rem; color: var(--accent-primary); margin-bottom: 1.5rem;">Your slot is provisionally locked</p>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); max-width: 440px; margin-inline: auto; line-height: 1.6;">
+              Thank you. A Luxe Aura guest relations associate will contact you on your provided phone number within the next 30 minutes to finalize and secure your luxurious self-care session.
+            </p>
+            <button class="btn btn-primary" style="margin-top: 2rem;" onclick="location.reload();">Book Another Session</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Google Map Canvas Mockup -->
+      <div class="contact-map-mockup scroll-zoom">
+        <div class="map-overlay-card">
+          <h4>LUXE AURA SANCTUARY</h4>
+          <p>425 Madison Avenue<br>New York, NY 10017</p>
+          <a href="https://maps.google.com" target="_blank" class="link-grow" style="font-size: 0.85rem;">Get Directions</a>
+        </div>
+        <div class="map-canvas-mock">
+          <div class="map-pin"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. Footer -->
+  <footer class="luxury-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>LUXE AURA</h3>
+        <p>Premium lifestyle and wellness beauty sanctuary. Crafting personalized hair, advanced skincare, and salon spa sessions with sophisticated techniques.</p>
+        <div style="font-size: 0.9rem; color: rgba(255,255,255,0.45);">
+          <p><i class="fa-solid fa-location-dot"></i> 425 Madison Avenue<br>New York, NY 10017</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>QUICK LINKS</h3>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services & Treatments</a>
+          <a href="experts.html">Our Master Artists</a>
+          <a href="gallery.html">Lookbook Gallery</a>
+          <a href="pricing.html">Interactive Pricing</a>
+          <a href="reviews.html">Client Testimonials</a>
+          <a href="blog.html">Editorial Magazine</a>
+          <a href="contact.html">Contact & Booking</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>SPECIALTIES</h3>
+        <div class="footer-links">
+          <a href="hair-studio.html">French Balayage & Cuts</a>
+          <a href="hair-studio.html">Signature Keratin Therapy</a>
+          <a href="beauty-treatments.html">Medical Skincare Facials</a>
+          <a href="beauty-treatments.html">Bridal Airbrush Artistry</a>
+          <a href="spa-wellness.html">Organic Keratin Treatment</a>
+          <a href="spa-wellness.html">Holistic Aromatherapy</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>NEWSLETTER</h3>
+        <p>Subscribe to our magazine for private events, luxury beauty tip letters, and early slot announcements.</p>
+        <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Welcome to the Luxe Aura Inner Circle.'); this.reset();">
+          <input type="email" class="footer-newsletter-input" placeholder="Your premium email" required>
+          <button type="submit" class="footer-newsletter-btn">Join</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div>
+        <p>&copy; 2026 Luxe Aura Salon & Spa. All rights reserved. | <a href="privacy.html" style="color: inherit;">Privacy Policy</a> | <a href="terms.html" style="color: inherit;">Terms of Service</a></p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Bottom CTA -->
+  <div class="sticky-mobile-cta">
+    <a href="tel:+15557264100">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call Salon</span>
+    </a>
+    <a href="tel:+15557264100" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a href="#" class="btn-cta btn-book">
+      <span>Book Appointment</span>
+    </a>
+  </div>
+
+  <!-- Booking Scheduler Modal -->
+  <div class="modal-overlay" id="booking-modal">
+    <div class="modal-content">
+      <div class="modal-close">&times;</div>
+      <h2 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 0.5rem; text-align: center;">RESERVE AN EXPERIENCE</h2>
+      <p style="font-family: var(--font-accent); font-style: italic; font-size: 1.15rem; color: var(--accent-primary); text-align: center; margin-bottom: 2rem;">Bespoke Luxury Self-Care Sessions</p>
+      
+      <form id="appointment-form">
+        <div class="form-group">
+          <label class="form-label" for="modal-name">Guest Name *</label>
+          <input type="text" id="modal-name" class="form-input" placeholder="Elena Vance" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="modal-phone">Phone Number *</label>
+          <input type="tel" id="modal-phone" class="form-input" placeholder="+1 (555) 726-4100" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="modal-email">Email Address</label>
+          <input type="email" id="modal-email" class="form-input" placeholder="guest@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="modal-service">Desired Treatment</label>
+          <select id="modal-service" class="form-input" style="appearance: auto; background-color: var(--surface);">
+            <option value="Hair Styling & Cut">Hair Styling & Creative Cut</option>
+            <option value="Signature French Balayage">Signature French Balayage</option>
+            <option value="Organic Keratin Treatment">Organic Keratin Treatment</option>
+            <option value="Advanced Salon Facial">Advanced Salon Facial</option>
+            <option value="Bridal Makeup Consultation">Bridal Makeup Consultation</option>
+            <option value="Spa & Wellness Session">Spa & Wellness Session</option>
+            <option value="Nail Art & Manicure">Premium Nail Art & Manicure</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="modal-date">Preferred Date & Time *</label>
+          <input type="datetime-local" id="modal-date" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="modal-message">Special Notes / Concierge Requests</label>
+          <textarea id="modal-message" class="form-input" rows="3" placeholder="Please specify if you prefer a specific stylist or have allergies..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">Submit Reservation Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
